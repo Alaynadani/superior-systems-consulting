@@ -1,0 +1,10 @@
+{
+  "name": "superior-systems-consulting-site",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .px-margin {
+    padding-inline: 1rem;
+  }
+
+  header .text-headline-sm {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  header .gap-space-md {
+    gap: 0.5rem;
+  }
+
+  header a[href="#contact"] {
+    padding-inline: 0.75rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .text-display {
+    font-size: 2.75rem;
+    line-height: 1.1;
+  }
+}
